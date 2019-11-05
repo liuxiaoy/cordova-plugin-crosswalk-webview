@@ -1,4 +1,4 @@
-# cordova-plugin-crosswalk-webview
+# cordova-plugin-webview-crosswalk
 
 Makes your Cordova application use the [Crosswalk WebView](https://crosswalk-project.org/)
 instead of the System WebView. Requires cordova-android 4.0 or greater.
@@ -27,7 +27,7 @@ The following directions are for cordova-cli (most people).  Alternatively you c
 * Add this plugin
 
 ```
-$ cordova plugin add cordova-plugin-crosswalk-webview
+$ cordova plugin add cordova-plugin-webview-crosswalk
 ```
 
 * Build
@@ -43,7 +43,7 @@ For example, building android with Crosswalk generates:
 /path/to/hello/platforms/android/build/outputs/apk/hello-armv7-debug.apk
 ```
 
-Note that you might have to run `cordova clean` before building, if you previously built the app without cordova-plugin-crosswalk-webview. Also, manually uninstall the app from the device/emulator before attempting to install the crosswalk-enabled version.
+Note that you might have to run `cordova clean` before building, if you previously built the app without cordova-plugin-webview-crosswalk. Also, manually uninstall the app from the device/emulator before attempting to install the crosswalk-enabled version.
 
 Also note that it is also possible to publish a multi-APK application on the Play Store that uses Crosswalk for Pre-L devices, and the (updatable) system webview for L+:
 
@@ -60,10 +60,10 @@ To build System-webview apk, remove this plugin and run:
 You can try out a different Crosswalk version by specifying certain variables while installing the plugin, or by changing the value of `xwalkVersion` in your `config.xml` after installing the plugin. Some examples:
 
     <!-- These are all equivalent -->
-    cordova plugin add cordova-plugin-crosswalk-webview --variable XWALK_VERSION="org.xwalk:xwalk_core_library:14+"
-    cordova plugin add cordova-plugin-crosswalk-webview --variable XWALK_VERSION="xwalk_core_library:14+"
-    cordova plugin add cordova-plugin-crosswalk-webview --variable XWALK_VERSION="14+"
-    cordova plugin add cordova-plugin-crosswalk-webview --variable XWALK_VERSION="14"
+    cordova plugin add cordova-plugin-webview-crosswalk --variable XWALK_VERSION="org.xwalk:xwalk_core_library:14+"
+    cordova plugin add cordova-plugin-webview-crosswalk --variable XWALK_VERSION="xwalk_core_library:14+"
+    cordova plugin add cordova-plugin-webview-crosswalk --variable XWALK_VERSION="14+"
+    cordova plugin add cordova-plugin-webview-crosswalk --variable XWALK_VERSION="14"
     <preference name="xwalkVersion" value="org.xwalk:xwalk_core_library:14+" />
     <preference name="xwalkVersion" value="xwalk_core_library:14+" />
     <preference name="xwalkVersion" value="14+" />
@@ -72,30 +72,30 @@ You can try out a different Crosswalk version by specifying certain variables wh
 You can also use a Crosswalk beta version. Some examples:
 
     <!-- These are all equivalent -->
-    cordova plugin add cordova-plugin-crosswalk-webview --variable XWALK_VERSION="org.xwalk:xwalk_core_library_beta:14+"
+    cordova plugin add cordova-plugin-webview-crosswalk --variable XWALK_VERSION="org.xwalk:xwalk_core_library_beta:14+"
     <preference name="xwalkVersion" value="org.xwalk:xwalk_core_library_beta:14+" />
 
 You can set [command-line flags](http://peter.sh/experiments/chromium-command-line-switches/) as well:
 
     <!-- This is the default -->
-    cordova plugin add cordova-plugin-crosswalk-webview --variable XWALK_COMMANDLINE="--disable-pull-to-refresh-effect"
+    cordova plugin add cordova-plugin-webview-crosswalk --variable XWALK_COMMANDLINE="--disable-pull-to-refresh-effect"
     <preference name="xwalkCommandLine" value="--disable-pull-to-refresh-effect" />
 
 You can use the Crosswalk [shared mode](https://crosswalk-project.org/documentation/shared_mode.html) which allows multiple Crosswalk applications to share one Crosswalk runtime downloaded from the Play Store.
 
     <!-- These are all equivalent -->
-    cordova plugin add cordova-plugin-crosswalk-webview  --variable XWALK_MODE="shared"
+    cordova plugin add cordova-plugin-webview-crosswalk  --variable XWALK_MODE="shared"
     <preference name="xwalkMode" value="shared" />
 
 You can also use a Crosswalk beta version on shared mode, e.g.:
 
     <!-- Using a Crosswalk shared mode beta version -->
-    cordova plugin add cordova-plugin-crosswalk-webview --variable XWALK_VERSION="org.xwalk:xwalk_shared_library_beta:14+"
+    cordova plugin add cordova-plugin-webview-crosswalk --variable XWALK_VERSION="org.xwalk:xwalk_shared_library_beta:14+"
 
 You can use the Crosswalk [lite mode](https://crosswalk-project.org/documentation/crosswalk_lite.html) which is the Crosswalk runtime designed to be as small as possible by removing less common libraries and features and compressing the APK.
 
     <!-- These are all equivalent -->
-    cordova plugin add cordova-plugin-crosswalk-webview  --variable XWALK_MODE="lite"
+    cordova plugin add cordova-plugin-webview-crosswalk  --variable XWALK_MODE="lite"
     <preference name="xwalkMode" value="lite" />
 
 You can set background color with the preference of BackgroundColor.

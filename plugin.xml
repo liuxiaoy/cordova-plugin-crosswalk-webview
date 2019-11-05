@@ -2,14 +2,14 @@
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android"
-        id="cordova-plugin-crosswalk-webview"
+        id="cordova-plugin-webview-crosswalk"
         version="2.4.0">
 
     <name>Crosswalk WebView Engine</name>
     <description>Changes the default WebView to CrossWalk</description>
     <license>Apache 2.0</license>
     <keywords>cordova,chromium,crosswalk,webview</keywords>
-    <repo>https://github.com/crosswalk-project/cordova-plugin-crosswalk-webview</repo>
+    <repo>https://github.com/liuxiaoy/cordova-plugin-webview-crosswalk</repo>
     <issue>https://crosswalk-project.org/jira</issue>
 
     <engines>
