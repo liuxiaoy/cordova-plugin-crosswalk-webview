@@ -109,63 +109,6 @@ You can also set user agent with the preference of xwalkUserAgent.
 
 ### Release Notes
 
-#### 2.4.0 (January 18, 2018)
-* Keep compatibility with cordova-android 7.0 project structure
-
-#### 2.3.0 (January 21, 2017)
-* Uses the latest Crosswalk 23 stable version by default
-
-#### 2.2.0 (November 4, 2016)
-* Uses the latest Crosswalk 22 stable version by default
-* Keep compatible for Cordova-android 6.0 with evaluating Javascript bridge
-* This version requires cordova-android 6.0.0 or newer
-
-#### 2.1.0 (September 9, 2016)
-* Uses the latest Crosswalk 21 stable version by default
-
-#### 2.0.0 (August 17, 2016)
-* Uses the latest Crosswalk 20 stable version by default
-* Discontinue support for Android 4.0 (ICS) in Crosswalk starting with version 20
-
-#### 1.8.0 (June 30, 2016)
-* Uses the latest Crosswalk 19 stable version by default
-
-#### 1.7.0 (May 4, 2016)
-* Uses the latest Crosswalk 18 stable version by default
-* Support to use [Crosswalk Lite](https://crosswalk-project.org/documentation/crosswalk_lite.html), It's possible to specify lite value with the variable of XWALK_MODE at install plugin time.
-* [Cordova screenshot plugin](https://github.com/gitawego/cordova-screenshot.git) can capture the visible content of web page with Crosswalk library.
-* Doesn't work with Crosswalk 17 and earlier
-
-#### 1.6.0 (March 11, 2016)
-* Uses the latest Crosswalk 17 stable version by default
-* Support to [package apps for 64-bit devices](https://crosswalk-project.org/documentation/android/android_64bit.html), it's possible to specify 64-bit targets using the `--xwalk64bit` option in the build command:
-
-        cordova build android --xwalk64bit
-
-#### 1.5.0 (January 18, 2016)
-* Uses the latest Crosswalk 16 stable version by default
-* The message of xwalk's ready can be listened
-
-#### 1.4.0 (November 5, 2015)
-* Uses the latest Crosswalk 15 stable version by default
-* Support User Agent and Background Color configuration preferences
-* Compatible with the newest Cordova version 5.3.4
-
-#### 1.3.0 (August 28, 2015)
-* Crosswalk variables can be configured as an option via CLI
-* Support for [Crosswalk's shared mode](https://crosswalk-project.org/documentation/shared_mode.html) via the XWALK_MODE install variable or xwalkMode preference
-* Uses the latest Crosswalk 14 stable version by default
-* The ANIMATABLE_XWALK_VIEW preference is false by default
-* Doesn't work with Crosswalk 14.43.343.17 and earlier
-
-#### 1.2.0 (April 22, 2015)
-* Made Crosswalk command-line configurable via `<preference name="xwalkCommandLine" value="..." />`
-* Disabled pull-down-to-refresh by default
-
-#### 1.1.0 (April 21, 2015)
-* Based on Crosswalk v13
-* Made Crosswalk version configurable via `<preference name="xwalkVersion" value="..." />`
-
-#### 1.0.0 (Mar 25, 2015)
-* Initial release
-* Based on Crosswalk v11
+#### 2.4.1 (November 5, 2019)
+* Base on https://github.com/crosswalk-project/cordova-plugin-crosswalk-webview 2.4.0
+* Keep compatibility with cordova-cli 9.0
