@@ -1,4 +1,7 @@
 platforms/android/libs/xwalk_core_library/build/
 platforms/android/libs/xwalk_core_library/build.gradle
-*.iml
 
+.idea
+*.iml
+package-lock.json
+node_modules
