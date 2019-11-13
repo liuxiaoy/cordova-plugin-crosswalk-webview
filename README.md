@@ -107,6 +107,11 @@ You can also set user agent with the preference of xwalkUserAgent.
 
     <preference name="xwalkUserAgent" value="customer UA" />
 
+### Usage Notes
+
+* preference BackgroundColor set "transparent", app will crash on start.
+* if use cordova-plugin-qrscanner, set preference CrosswalkAnimatable with "true".
+
 ### Release Notes
 
 #### 2.4.1 (November 5, 2019)
