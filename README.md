@@ -109,7 +109,7 @@ You can also set user agent with the preference of xwalkUserAgent.
 
 ### Usage Notes
 
-* preference BackgroundColor set "transparent", app will crash on start.
+* preference BackgroundColor set "transparent", "@null" no effect.
 * if use cordova-plugin-qrscanner, set preference CrosswalkAnimatable with "true".
 * on above API 23 I'm facing java.lang.UnsupportedOperationException: TextureView doesn't support displaying a background drawable at android.view.TextureView.setBackgroundDrawable.
 
