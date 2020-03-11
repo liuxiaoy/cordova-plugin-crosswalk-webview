@@ -3,7 +3,7 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android"
         id="cordova-plugin-webview-crosswalk"
-        version="2.4.1">
+        version="2.5.0">
 
     <name>Crosswalk WebView Engine</name>
     <description>Changes the default WebView to CrossWalk</description>
@@ -25,7 +25,7 @@
         <preference name="XWALK_MODE" default="embedded" />
         <preference name="XWALK_MULTIPLEAPK" default="true" />
         <config-file target="res/xml/config.xml" parent="/*">
-            <preference name="webView" value="org.crosswalk.engine.XWalkWebViewEngine"/>
+            <preference name="webView" value="org.crosswalk.engine.XWalkBridgeEngine"/>
             <preference name="xwalkVersion" value="$XWALK_VERSION"/>
             <preference name="xwalkLiteVersion" value="$XWALK_LITEVERSION"/>
             <preference name="xwalkCommandLine" value="$XWALK_COMMANDLINE"/>
@@ -39,15 +39,16 @@
             <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
         </config-file>
 
-        <source-file src="platforms/android/src/org/crosswalk/engine/XWalkWebViewEngine.java" target-dir="src/org/crosswalk/engine"/>
-        <source-file src="platforms/android/src/org/crosswalk/engine/XWalkFileChooser.java" target-dir="src/org/crosswalk/engine"/>
-        <source-file src="platforms/android/src/org/crosswalk/engine/XWalkExposedJsApi.java" target-dir="src/org/crosswalk/engine"/>
+        <source-file src="platforms/android/src/org/crosswalk/engine/XWalkBridgeEngine.java" target-dir="src/org/crosswalk/engine"/>
+        <source-file src="platforms/android/src/org/crosswalk/engine/XWalkCordovaClientCertRequest.java" target-dir="src/org/crosswalk/engine"/>
+        <source-file src="platforms/android/src/org/crosswalk/engine/XWalkCordovaCookieManager.java" target-dir="src/org/crosswalk/engine"/>
+        <source-file src="platforms/android/src/org/crosswalk/engine/XWalkCordovaHttpAuthHandler.java" target-dir="src/org/crosswalk/engine"/>
         <source-file src="platforms/android/src/org/crosswalk/engine/XWalkCordovaResourceClient.java" target-dir="src/org/crosswalk/engine"/>
         <source-file src="platforms/android/src/org/crosswalk/engine/XWalkCordovaUiClient.java" target-dir="src/org/crosswalk/engine"/>
         <source-file src="platforms/android/src/org/crosswalk/engine/XWalkCordovaView.java" target-dir="src/org/crosswalk/engine"/>
-        <source-file src="platforms/android/src/org/crosswalk/engine/XWalkCordovaCookieManager.java" target-dir="src/org/crosswalk/engine"/>
-        <source-file src="platforms/android/src/org/crosswalk/engine/XWalkCordovaClientCertRequest.java" target-dir="src/org/crosswalk/engine"/>
-        <source-file src="platforms/android/src/org/crosswalk/engine/XWalkCordovaHttpAuthHandler.java" target-dir="src/org/crosswalk/engine"/>
+        <source-file src="platforms/android/src/org/crosswalk/engine/XWalkExposedJsApi.java" target-dir="src/org/crosswalk/engine"/>
+        <source-file src="platforms/android/src/org/crosswalk/engine/XWalkFileChooser.java" target-dir="src/org/crosswalk/engine"/>
+        <source-file src="platforms/android/src/org/crosswalk/engine/XWalkWebViewEngine.java" target-dir="src/org/crosswalk/engine"/>
 
         <framework src="platforms/android/xwalk.gradle" custom="true" type="gradleReference"/>
 

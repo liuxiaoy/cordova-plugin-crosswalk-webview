@@ -109,10 +109,16 @@ You can also set user agent with the preference of xwalkUserAgent.
 
 ### Usage Notes
 
-* preference BackgroundColor set "transparent", app will crash on start.
+* preference BackgroundColor set "transparent", "@null" no effect.
 * if use cordova-plugin-qrscanner, set preference CrosswalkAnimatable with "true".
+* on above API 23 I'm facing java.lang.UnsupportedOperationException: TextureView doesn't support displaying a background drawable at android.view.TextureView.setBackgroundDrawable.
+
+now you can use the [x5 WebView](https://github.com/liuxiaoy/cordova-plugin-webview-x5)
 
 ### Release Notes
+
+#### 2.5.0 (March 10, 2020)
+* Use system WebView on above API 23
 
 #### 2.4.1 (November 5, 2019)
 * Base on https://github.com/crosswalk-project/cordova-plugin-crosswalk-webview 2.4.0

@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-webview-crosswalk",
-  "version": "2.4.1",
+  "version": "2.5.0",
   "description": "Changes the default WebView to CrossWalk",
   "dependencies": {
     "elementtree": "*"
@@ -46,7 +46,7 @@
   "author": "",
   "license": "Apache 2.0",
   "bugs": {
-    "url": "https://crosswalk-project.org/jira"
+    "url": "https://github.com/liuxiaoy/cordova-plugin-webview-crosswalk/issues"
   },
   "homepage": "https://github.com/liuxiaoy/cordova-plugin-webview-crosswalk"
 }
