@@ -117,6 +117,9 @@ now you can use the [x5 WebView](https://github.com/liuxiaoy/cordova-plugin-webv
 
 ### Release Notes
 
+#### 2.5.0 (March 10, 2020)
+* Use system WebView on above API 23
+
 #### 2.4.1 (November 5, 2019)
 * Base on https://github.com/crosswalk-project/cordova-plugin-crosswalk-webview 2.4.0
 * Keep compatibility with cordova-cli 9.0
